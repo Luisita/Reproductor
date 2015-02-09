@@ -94,7 +94,7 @@ function reproducir(src, nombre){
     archivo = null;
   };
   archivo = new Media(src, onSuccess, onErrors);
-  $("#nombre").html(nombre);
+  $("#nombre").html("Reproduciendo: <br>"+nombre);
 
                 // Play audio
                 archivo.play();

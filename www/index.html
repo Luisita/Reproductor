@@ -38,17 +38,17 @@
     </head>
     <body>
         <div class="pag" id="index" data-role="page" data-theme="a">
-            <div data-role="collapsible" id="listaMusica" data-theme="b" data-content-theme="c" >
-                <a href="#listaMusica" class="ui-btn ui-btn-icon-left ui-icon-bullets" id="btnM" >Mi música</a>
+            <div data-role="panel" id="listaMusica" data-position="left" data-display="reveal" data-theme="a" data-animate="true">
+
+                <h3 style="text-align:center;">Mi música</h3>
                 <ul data-role="listview" data-filter="true" id="listaC">
                     
                 </ul>
             </div>
             <div data-role="header" id="header" data-position="fixed">
-                <div data-role="header" id="header" data-position="fixed">
-                <!-- Encabezado -->
-                <h1><a href="#listaMusica" class="ui-btn ui-btn-icon-left ui-icon-bullets" id="btnM" onclick="crearLista();">PLAY ALÍ</a></h1>
-                </div>
+            <!-- Encabezado -->
+                <a href="#listaMusica" class="ui-btn ui-btn-icon-left ui-icon-bullets" id="btnM" onclick="crearLista();">PLAY ALÍ</a>
+                
             </div>
             <div role="main" class="ui-content">
             <!-- Imagen de la pista -->

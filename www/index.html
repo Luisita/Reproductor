@@ -40,12 +40,13 @@
         <div class="pag" id="index" data-role="page" data-theme="a">
             <div data-role="header" id="header" data-position="fixed">
             <!-- Encabezado -->
-            <h1>PLAY ALÍ</h1>
-                <a href="#listaMusica" id="btnM" onload="crearLista();"></a>
-                
+                <h1>PLAY ALÍ</h1>            
             </div>
-            <div id="listaMusica" data-role="collapsible" data-theme="b" data-content-theme="c">
-                <a href="#listaMusica" id="btnM" onload="crearLista();">mi música</a>
+            <div>
+                <a href="#listaMusica" id="btnM" onclick="crearLista();">música</a>
+            </div>
+            <div id="listaMusica" onload="crearLista();" data-role="collapsible" data-theme="b" data-content-theme="c">
+                <h3>Mi música</h3>
                 <ul data-role="listview" data-filter="true" id="listaC">
                     
                 </ul>

@@ -38,14 +38,17 @@
     </head>
     <body>
         <div class="pag" id="index" data-role="page" data-theme="a">
-            <div data-role="collapsible" id="listaMusica" data-theme="b" data-content-theme="c">
+            <div data-role="collapsible" id="listaMusica" data-theme="b" data-content-theme="c" >
                 <h3>Mi música</h3>
                 <ul data-role="listview" data-filter="true" id="listaC">
                     
                 </ul>
             </div>
             <div data-role="header" id="header" data-position="fixed">
-                <h1>PLAYALÍ</h1>
+                <div data-role="header" id="header" data-position="fixed">
+                <!-- Encabezado -->
+                <a href="#listaMusica" class="ui-btn ui-btn-icon-left ui-icon-bullets" id="btnM" onclick="crearLista();">PLAYALÍ</a>
+                </div>
             </div>
             <div role="main" class="ui-content">
             <!-- Imagen de la pista -->
@@ -55,14 +58,11 @@
                         <p id="duracion"></p>
                     </div>
                 </div>
-                <div id="imgC">
-                    <img src="img/fondo.jpg" width="100%" height="80%">
-                </div>
             </div>
-            <div id="controles" data-role="controlgroup" data-type="horizontal">
-                <a data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-inline="true" id="pausa" onclick="pauseAudio()">Pausa</a>
-                <a data-theme="a" data-icon="arrow-r" data-iconpos="notext" data-inline="true" id="reanudar" onclick="play()">Reproducir</a>
-                <a data-theme="a" data-icon="arrow-u" data-iconpos="notext" data-inline="true" id="parar" onclick="stopAudio()">Parar</a>
+            <div id="controles" data-role="footer" data-position="fixed">
+                <button data-theme="b" id="pausa" onclick="pauseAudio()">Pausa</button>
+                <button data-theme="b" id="reanudar" onclick="play()">Reproducir</button>
+                <button data-theme="b" id="parar" onclick="stopAudio()">Parar</button>
             </div>
         </div>
     </body>

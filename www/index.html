@@ -38,18 +38,15 @@
     </head>
     <body>
         <div class="pag" id="index" data-role="page" data-theme="a">
-            <div data-role="panel" id="listaMusica" data-position="left" data-display="reveal" data-theme="a" data-animate="true">
-
-                <h3 style="text-align:center;">Mi m&uacutesica</h3>
-                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar canción" data-autodividers="true" id="listaC">
+            <div data-role="collapsible" id="listaMusica" data-theme="b" data-content-theme="c">
+                <h3>Mi música</h3>
+                <ul data-role="listview" data-filter="true" id="listaC">
                     
                 </ul>
-                <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Cerrar</a>
-
             </div>
             <div data-role="header" id="header" data-position="fixed">
             <!-- Encabezado -->
-                <a href="#listaMusica" class="ui-btn ui-btn-icon-left ui-icon-bullets" id="btnM" onclick="crearLista();">M&uacutesica</a>
+                <a href="#listaMusica" class="ui-btn ui-btn-icon-left ui-icon-bullets" id="btnM" onclick="crearLista();">Música</a>
                 <img src="img/logo.png" id="logo" />
             </div>
             <div role="main" class="ui-content">

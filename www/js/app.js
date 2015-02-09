@@ -11,7 +11,6 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady(){
   window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
   window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
-  crearLista();
 }
 function onFileSystemSuccess(fileSystem) {
   // Definimos el medio de lectura sdcard en este caso

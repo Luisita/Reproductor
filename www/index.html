@@ -42,12 +42,12 @@
             <!-- Encabezado -->
                 <h1>PLAY ALÍ</h1>            
             </div>
-            <div>
-                <a href="#listaMusica" id="btnM" onclick="crearLista();">música</a>
+            <div data-role="controlgroup">
+                <a href="#listaMusica" data-role="button" id="btnM" onclick="crearLista();">música</a>
             </div>
-            <div id="listaMusica" data-role="collapsible" data-theme="b" data-content-theme="c">
+            <div id="listaMusica" data-demo-html="true">
                 <h3>Mi música</h3>
-                <ul data-role="listview" data-filter="true" id="listaC">
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar canciones" data-inset="true" id="listaC">
                     
                 </ul>
             </div>

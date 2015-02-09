@@ -46,22 +46,21 @@
             </div>
             <div data-role="header" id="header" data-position="fixed">
             <!-- Encabezado -->
-                <a href="#listaMusica" id="btnM" onclick="crearLista();">PLAY ALÍ</a>
+                <a href="#listaMusica" id="btnM" onclick="crearLista();"></a>
                 
             </div>
             <div role="main" class="ui-content">
             <!-- Imagen de la pista -->
                 <div id="reproductor">
                     <div id="info">
-                        <h2 id="nombre"></h2>
-                        <p id="duracion"></p>
+                        <h3 id="nombre"></h3>
                     </div>
                 </div>
             </div>
-            <div id="controles" data-role="footer" data-position="fixed">
-                <button data-theme="b" id="pausa" onclick="pauseAudio()">Pausa</button>
-                <button data-theme="b" id="reanudar" onclick="play()">Reproducir</button>
-                <button data-theme="b" id="parar" onclick="stopAudio()">Parar</button>
+            <div id="controles" data-theme="a" data-role="footer" data-position="fixed">
+                <button data-theme="d"data-inline="true" id="pausa" onclick="pauseAudio()">Pausa</button>
+                <button data-theme="d" data-inline="true" id="reanudar" onclick="play()">Reproducir</button>
+                <button data-theme="d" data-inline="true" id="parar" onclick="stopAudio()">Parar</button>
             </div>
         </div>
     </body>
